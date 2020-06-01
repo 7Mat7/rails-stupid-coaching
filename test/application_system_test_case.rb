@@ -5,7 +5,7 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     capabilities = Selenium::WebDriver::Remote::Capabilities.chrome \
       chromeOptions: { args: %w[headless disable-gpu window-size=1280x760] }
     Capybara::Selenium::Driver.new app,
-      browser: :chrome, desired_capabilities: capabilities
+      browser: :headless_chrome, desired_capabilities: capabilities
   end
   driven_by :selenium, using: :headless_chrome
 end

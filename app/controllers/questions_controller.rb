@@ -3,11 +3,11 @@ class QuestionsController < ApplicationController
 end
 
   def answer
-    if params[:ask] == "I am going to work right now!"
+    if params[:question] == "I am going to work right now!"
     @answer = "Okay Good"
-    elsif params[:ask].include? "?"
+    elsif params[:question].include? "?"
     @answer = "Silly question, get dressed and go to work!"
-    elsif params[:ask] != ""
+    elsif params[:question] != ""
     @answer = "I don't care, get dressed and go to work!"
   end
   end

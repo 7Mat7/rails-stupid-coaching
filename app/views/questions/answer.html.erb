@@ -1,7 +1,7 @@
 <h1>Stupid Coaching</h1>
 
 <div class="question">
-<p><%= params[:ask] %></p>
+<p><%= params[:question] %></p>
 <p class='user'>- You</p>
 </div>
 
@@ -9,5 +9,7 @@
 <p> <%= @answer %> </p>
 <p class='user'>- Your Coach</p>
 </div>
+
+take_screenshot
 
 <%= link_to 'Ask another question', ask_path %>

@@ -1,0 +1,43 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$gray: #F4F4F4;
+
+body {
+  background: $gray; // Using this variable
+  font-family: 'Montserrat';
+  font-size: 16;
+}
+
+.user{
+  font-style: italic;
+}
+
+.question {
+  border-left: solid 3px black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.answer {
+  background-color: #FCFFDF;
+  border-left: solid 3px black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 500px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+}
+
+.new-question {
+  text-decoration: none;
+  background-color: blue;
+  color: #FFF;
+}
